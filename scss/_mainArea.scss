@@ -1,0 +1,188 @@
+.mainArea {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 42px 0 90px;
+
+    .gameBox {
+        width: 92vw;
+        height: auto;
+        background: $mainArea_BG;
+        border: solid 1px $mainArea_Border;
+        margin: 10vw auto 0;
+
+        .dateBox {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: -4.5vw 0 4vw;
+
+            i {
+                width: 9vw;
+                height: 10vw;
+            }
+        }
+
+        .bigTitle {
+            width: 80%;
+            height: 10vw;
+            @include mainArea_bigTitle;
+            margin: 0 auto 4vw;
+        }
+
+        .bonusBox {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 4vw;
+
+            p {
+                color: transparent;
+                font-size: 5vw;
+                font-weight: bold;
+                background: $mainArea_BonusColor;
+                background-clip: text;
+                margin-right: 3vw;
+            }
+
+            .moneyBox {
+                width: 45vw;
+                height: 11vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    width: 4.5vw;
+                    height: 5vw;
+                    margin-top: -1vw;
+                }
+            }
+        }
+
+        .bettingBox {
+            width: 94%;
+            height: auto;
+            background: $mainArea_innerBG;
+            border: solid 1px $mainArea_innerBorder;
+            margin: 0 auto 3vw;
+
+            .smallTitle {
+                width: 100%;
+                height: 9vw;
+                background: $mainArea_innerTitleBG;
+
+                ul {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+
+                    li {
+                        width: 34%;
+                        height: 100%;
+                        color: $mainArea_innerTitle;
+                        font-size: 4vw;
+                        font-weight: bold;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .rowBox {
+                            width: 88%;
+                            height: 84%;
+                            @include rowBox;
+
+                            &.left {
+                                
+                                p {
+                                    
+                                    &:nth-of-type(1) {
+                                        @include rowBox_linear_1;
+                                    }
+                                }
+                            }
+                            &.right {
+
+                                p {
+
+                                    &:nth-of-type(2) {
+                                        @include rowBox_linear_2;
+                                    }
+                                }
+                            }
+
+                            p {
+                                width: 50%;
+                                height: 82%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding-bottom: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tableBox {
+                width: 100%;
+                height: 72vw;
+                overflow-y: auto;
+
+                ul {
+                    width: 100%;
+                    height: auto;
+
+                    li {
+                        width: 100%;
+                        height: 9vw;
+                        display: flex;
+                     
+                        div {
+                            width: 34%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            &:nth-of-type(1) {
+                                justify-content: flex-start;
+                            }
+                            &:last-child {
+                                justify-content: flex-end;
+                            }
+
+                            i {
+                                width: 9vw;
+                                height: 7vw;
+                                flex-shrink: 0;
+                                margin: 0 2vw;
+                            }
+
+                            p {
+                                color: $mainArea_Color;
+                                font-size: 4vw;
+                                font-weight: bold;
+
+                                &.money {
+                                    font-size: 5vw;
+                                }
+                            }
+
+                            button {
+                                width: 13vw;
+                                height: 7vw;
+                                @include mainArea_betBtn;
+                                margin-right: 2vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

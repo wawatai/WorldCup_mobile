@@ -1,0 +1,714 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+i {
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+main {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.bg {
+  background: url("../images/bg_01.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+header .center {
+  background: url("../images/smallBG_02.png");
+  background-size: contain;
+}
+
+header .center::before {
+  background: url("../images/smallBG_01.png") no-repeat;
+  background-size: contain;
+}
+
+header .center::after {
+  background: url("../images/smallBG_03.png") no-repeat;
+  background-size: contain;
+}
+
+footer i {
+  background: url("../images/footer_typeIC.png") no-repeat;
+  background-size: 300%;
+}
+
+.mainArea .dateBox .date_month_num.zero {
+  background: url("../images/date/zero.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_month_num.one {
+  background: url("../images/date/one.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_month_num.two {
+  background: url("../images/date/two.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_month_num.three {
+  background: url("../images/date/three.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_month_num.four {
+  background: url("../images/date/four.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_month_num.five {
+  background: url("../images/date/five.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_month_num.six {
+  background: url("../images/date/six.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_month_num.seven {
+  background: url("../images/date/seven.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_month_num.eight {
+  background: url("../images/date/eight.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_month_num.nine {
+  background: url("../images/date/nine.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_day_num.zero {
+  background: url("../images/date/zero.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_day_num.one {
+  background: url("../images/date/one.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_day_num.two {
+  background: url("../images/date/two.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_day_num.three {
+  background: url("../images/date/three.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_day_num.four {
+  background: url("../images/date/four.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_day_num.five {
+  background: url("../images/date/five.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_day_num.six {
+  background: url("../images/date/six.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_day_num.seven {
+  background: url("../images/date/seven.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_day_num.eight {
+  background: url("../images/date/eight.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_day_num.nine {
+  background: url("../images/date/nine.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_month_word {
+  background: url("../images/date/month.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .dateBox .date_day_word {
+  background: url("../images/date/day.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .bonusBox .moneyBox {
+  background: url("../images/bonus_BG.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .moneyBox i.zero {
+  background: url("../images/bonus/zero.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .moneyBox i.one {
+  background: url("../images/bonus/one.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .moneyBox i.two {
+  background: url("../images/bonus/two.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .moneyBox i.three {
+  background: url("../images/bonus/three.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .moneyBox i.four {
+  background: url("../images/bonus/four.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .moneyBox i.five {
+  background: url("../images/bonus/five.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .moneyBox i.six {
+  background: url("../images/bonus/six.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .moneyBox i.seven {
+  background: url("../images/bonus/seven.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .moneyBox i.eight {
+  background: url("../images/bonus/eight.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .moneyBox i.nine {
+  background: url("../images/bonus/nine.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .tableBox .flag_brazil {
+  background: url("../images/flag/Brazil.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .tableBox .flag_germany {
+  background: url("../images/flag/Germany.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .tableBox .flag_netherlands {
+  background: url("../images/flag/Netherlands.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .tableBox .flag_franch {
+  background: url("../images/flag/Franch.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .tableBox .flag_england {
+  background: url("../images/flag/England.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .tableBox .flag_argentina {
+  background: url("../images/flag/Argentina.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .tableBox .flag_italy {
+  background: url("../images/flag/Italy.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .tableBox .flag_sweden {
+  background: url("../images/flag/Sweden.png") no-repeat center;
+  background-size: contain;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  min-height: 833px;
+  background: #000000;
+}
+html body {
+  width: 100%;
+  height: 100%;
+}
+html body header {
+  width: 100%;
+  height: 42px;
+  background: -webkit-gradient(linear, left top, right top, from(#d7a950), color-stop(6%, #bf8935), color-stop(49%, #f3e19a), color-stop(93%, #bf8935), to(#d7a950));
+  background: linear-gradient(to right, #d7a950 0%, #bf8935 6%, #f3e19a 49%, #bf8935 93%, #d7a950 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+html body header .center {
+  width: 65%;
+  height: 35px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+html body header .center::before, html body header .center::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 11px;
+  height: 100%;
+}
+html body header .center::before {
+  left: -11px;
+}
+html body header .center::after {
+  right: -11px;
+}
+html body header .center p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: -5px;
+}
+html body header .center p span {
+  margin-left: 5px;
+}
+html body .mainArea {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 42px 0 90px;
+}
+html body .mainArea .gameBox {
+  width: 92vw;
+  height: auto;
+  background: rgba(8, 35, 132, 0.7450980392);
+  border: solid 1px #58bff4;
+  margin: 10vw auto 0;
+}
+html body .mainArea .gameBox .dateBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -4.5vw 0 4vw;
+}
+html body .mainArea .gameBox .dateBox i {
+  width: 9vw;
+  height: 10vw;
+}
+html body .mainArea .gameBox .bigTitle {
+  width: 80%;
+  height: 10vw;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e8d793), color-stop(50%, #d2a359), color-stop(93%, #e8d793));
+  background: linear-gradient(to top, #e8d793 0%, #d2a359 50%, #e8d793 93%);
+  border-radius: 10px;
+  border: solid 1px #f9eecb;
+  -webkit-box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.5019607843);
+  color: #241601;
+  font-size: 4vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 4vw;
+}
+html body .mainArea .gameBox .bonusBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4vw;
+}
+html body .mainArea .gameBox .bonusBox p {
+  color: transparent;
+  font-size: 5vw;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #f5c83d), color-stop(35%, #e8862e), color-stop(67%, #ffd75f));
+  background: linear-gradient(to top, #f5c83d 10%, #e8862e 35%, #ffd75f 67%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  margin-right: 3vw;
+}
+html body .mainArea .gameBox .bonusBox .moneyBox {
+  width: 45vw;
+  height: 11vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .mainArea .gameBox .bonusBox .moneyBox i {
+  width: 4.5vw;
+  height: 5vw;
+  margin-top: -1vw;
+}
+html body .mainArea .gameBox .bettingBox {
+  width: 94%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5019607843);
+  border: solid 1px #6dd1ff;
+  margin: 0 auto 3vw;
+}
+html body .mainArea .gameBox .bettingBox .smallTitle {
+  width: 100%;
+  height: 9vw;
+  background: #1b327b;
+}
+html body .mainArea .gameBox .bettingBox .smallTitle ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .mainArea .gameBox .bettingBox .smallTitle ul li {
+  width: 34%;
+  height: 100%;
+  color: #e2f4ff;
+  font-size: 4vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .mainArea .gameBox .bettingBox .smallTitle ul li .rowBox {
+  width: 88%;
+  height: 84%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d4d4d4));
+  background: linear-gradient(to top, #ffffff 0%, #d4d4d4 100%);
+  border-radius: 30px;
+  border: solid 1px #474747;
+  -webkit-box-sizing: 0 2px 5px 0 rgba(0, 0, 0, 0.5019607843);
+          box-sizing: 0 2px 5px 0 rgba(0, 0, 0, 0.5019607843);
+  color: #4c4c4c;
+  font-size: 3vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 3px;
+  cursor: pointer;
+}
+html body .mainArea .gameBox .bettingBox .smallTitle ul li .rowBox.left p:nth-of-type(1) {
+  background: -webkit-gradient(linear, left bottom, left top, from(#06b6e8), color-stop(17%, #1972e0), to(#06b6e8));
+  background: linear-gradient(to top, #06b6e8 0%, #1972e0 17%, #06b6e8 100%);
+  border-radius: 30px;
+  border: solid 1px #44ccee;
+  color: #ffffff;
+}
+html body .mainArea .gameBox .bettingBox .smallTitle ul li .rowBox.right p:nth-of-type(2) {
+  background: -webkit-gradient(linear, left bottom, left top, from(#11d416), color-stop(17%, #0c8b1b), to(#11d416));
+  background: linear-gradient(to top, #11d416 0%, #0c8b1b 17%, #11d416 100%);
+  border-radius: 30px;
+  border: solid 1px #1deb27;
+  color: #ffffff;
+}
+html body .mainArea .gameBox .bettingBox .smallTitle ul li .rowBox p {
+  width: 50%;
+  height: 82%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2px;
+}
+html body .mainArea .gameBox .bettingBox .tableBox {
+  width: 100%;
+  height: 72vw;
+  overflow-y: auto;
+}
+html body .mainArea .gameBox .bettingBox .tableBox ul {
+  width: 100%;
+  height: auto;
+}
+html body .mainArea .gameBox .bettingBox .tableBox ul li {
+  width: 100%;
+  height: 9vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .mainArea .gameBox .bettingBox .tableBox ul li div {
+  width: 34%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .mainArea .gameBox .bettingBox .tableBox ul li div:nth-of-type(1) {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+html body .mainArea .gameBox .bettingBox .tableBox ul li div:last-child {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html body .mainArea .gameBox .bettingBox .tableBox ul li div i {
+  width: 9vw;
+  height: 7vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 2vw;
+}
+html body .mainArea .gameBox .bettingBox .tableBox ul li div p {
+  color: #ffffff;
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .mainArea .gameBox .bettingBox .tableBox ul li div p.money {
+  font-size: 5vw;
+}
+html body .mainArea .gameBox .bettingBox .tableBox ul li div button {
+  width: 13vw;
+  height: 7vw;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ea8b11), to(#ffd644));
+  background: linear-gradient(to top, #ea8b11 0%, #ffd644 100%);
+  border-radius: 3px;
+  border: none;
+  color: #161616;
+  font-size: 4.5vw;
+  font-weight: bold;
+  margin-right: 2vw;
+}
+html body .mainArea .gameBox .bettingBox .tableBox ul li div button:active, html body .mainArea .gameBox .bettingBox .tableBox ul li div button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ea8b11), to(#e25406));
+  background: linear-gradient(to top, #ea8b11 0%, #e25406 100%);
+  color: #ffffff;
+}
+html body footer {
+  width: 100%;
+  height: 60px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(16%, #bf8935), color-stop(50%, #e8d793), color-stop(72%, #bf8935), color-stop(93%, #ead271));
+  background: linear-gradient(to right, #bf8935 16%, #e8d793 50%, #bf8935 72%, #ead271 93%);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+html body footer ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 5px;
+  bottom: 0;
+}
+html body footer ul li {
+  width: auto;
+  min-width: 86px;
+  height: 70px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1b3180), to(#1d46a4));
+  background: linear-gradient(to top, #1b3180 0%, #1d46a4 100%);
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: 0 -3px 8px 0 rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0 -3px 8px 0 rgba(0, 0, 0, 0.5019607843);
+  border: solid 3px #fff1ae;
+  border-bottom: none;
+  color: #fff1ae;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10px;
+  margin-right: 8px;
+}
+html body footer ul li:active, html body footer ul li.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#112a83), to(#0e236d));
+  background: linear-gradient(to top, #112a83 0%, #0e236d 100%);
+}
+html body footer ul li i {
+  width: 36px;
+  height: 33px;
+  margin-bottom: 5px;
+}
+html body footer ul li i.rule_ic {
+  background-position-x: 0;
+}
+html body footer ul li i.record_ic {
+  background-position-x: 50%;
+}
+html body footer ul li i.acting_ic {
+  background-position-x: 100%;
+}
+html body .bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}

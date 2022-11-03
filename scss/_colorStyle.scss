@@ -1,0 +1,84 @@
+//header+footer
+$header_BG: linear-gradient(to right,#d7a950 0%,#bf8935 6%,#f3e19a 49%,#bf8935 93%,#d7a950 100%);
+$header_Color: #ffffff;
+$footer_BG: linear-gradient(to right,#bf8935 16%,#e8d793 50%,#bf8935 72%,#ead271 93%);
+@mixin footer_typeBtn {
+    background: linear-gradient(to top,#1b3180 0%,#1d46a4 100%);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -3px 8px 0 #00000080;
+    border: solid 3px #fff1ae;
+    border-bottom: none;
+    color: #fff1ae;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+
+    &:active,&.active {
+        background: linear-gradient(to top,#112a83 0%,#0e236d 100%);
+    }
+}
+
+//mainArea
+$mainArea_BG: #082384be;
+$mainArea_innerBG: #00000080;
+$mainArea_Border: #58bff4;
+$mainArea_innerBorder: #6dd1ff;
+@mixin mainArea_bigTitle {
+    background: linear-gradient(to top,#e8d793 0%,#d2a359 50%,#e8d793 93%);
+    border-radius: 10px;
+    border: solid 1px #f9eecb;
+    box-shadow: 0 3px 6px -2px #00000080;
+    color: #241601;
+    font-size: 4vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+$mainArea_BonusColor: linear-gradient(to top,#f5c83d 10%,#e8862e 35%,#ffd75f 67%);
+$mainArea_innerTitleBG: #1b327b;
+$mainArea_innerTitle: #e2f4ff;
+@mixin rowBox {
+    background: linear-gradient(to top,#ffffff 0%,#d4d4d4 100%);
+    border-radius: 30px;
+    border: solid 1px #474747;
+    box-sizing: 0 2px 5px 0 #00000080;
+    color: #4c4c4c;
+    font-size: 3vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3px;
+    cursor: pointer;
+}
+@mixin rowBox_linear_1 {
+    background: linear-gradient(to top,#06b6e8 0%,#1972e0 17%,#06b6e8 100%);
+    border-radius: 30px;
+    border: solid 1px #44ccee;
+    color: #ffffff;
+}
+@mixin rowBox_linear_2 {
+    background: linear-gradient(to top,#11d416 0%,#0c8b1b 17%,#11d416 100%);
+    border-radius: 30px;
+    border: solid 1px #1deb27;
+    color: #ffffff;
+}
+$mainArea_Color: #ffffff;
+@mixin mainArea_betBtn {
+    background: linear-gradient(to top,#ea8b11 0%,#ffd644 100%);
+    border-radius: 3px;
+    border: none;
+    color: #161616;
+    font-size: 4.5vw;
+    font-weight: bold;
+
+    &:active,&.active {
+        background: linear-gradient(to top,#ea8b11 0%,#e25406 100%);
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,187 @@
+.bg {
+    background: url('../images/bg_01.jpg') no-repeat top center;
+    background-size: cover;
+}
+
+header .center {
+    background: url('../images/smallBG_02.png');
+    background-size: contain;
+}
+header .center::before {
+    background: url('../images/smallBG_01.png') no-repeat;
+    background-size: contain;
+}
+header .center::after {
+    background: url('../images/smallBG_03.png') no-repeat;
+    background-size: contain;
+}
+
+footer i {
+    background: url('../images/footer_typeIC.png') no-repeat;
+    background-size: 300%;
+}
+
+.mainArea .dateBox .date_month_num.zero {
+    background: url('../images/date/zero.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_month_num.one {
+    background: url('../images/date/one.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_month_num.two {
+    background: url('../images/date/two.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_month_num.three {
+    background: url('../images/date/three.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_month_num.four {
+    background: url('../images/date/four.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_month_num.five {
+    background: url('../images/date/five.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_month_num.six {
+    background: url('../images/date/six.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_month_num.seven {
+    background: url('../images/date/seven.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_month_num.eight {
+    background: url('../images/date/eight.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_month_num.nine {
+    background: url('../images/date/nine.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_day_num.zero {
+    background: url('../images/date/zero.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_day_num.one {
+    background: url('../images/date/one.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_day_num.two {
+    background: url('../images/date/two.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_day_num.three {
+    background: url('../images/date/three.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_day_num.four {
+    background: url('../images/date/four.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_day_num.five {
+    background: url('../images/date/five.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_day_num.six {
+    background: url('../images/date/six.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_day_num.seven {
+    background: url('../images/date/seven.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_day_num.eight {
+    background: url('../images/date/eight.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_day_num.nine {
+    background: url('../images/date/nine.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_month_word {
+    background: url('../images/date/month.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .dateBox .date_day_word {
+    background: url('../images/date/day.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .bonusBox .moneyBox {
+    background: url('../images/bonus_BG.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .moneyBox i.zero {
+    background: url('../images/bonus/zero.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .moneyBox i.one {
+    background: url('../images/bonus/one.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .moneyBox i.two {
+    background: url('../images/bonus/two.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .moneyBox i.three {
+    background: url('../images/bonus/three.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .moneyBox i.four {
+    background: url('../images/bonus/four.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .moneyBox i.five {
+    background: url('../images/bonus/five.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .moneyBox i.six {
+    background: url('../images/bonus/six.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .moneyBox i.seven {
+    background: url('../images/bonus/seven.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .moneyBox i.eight {
+    background: url('../images/bonus/eight.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .moneyBox i.nine {
+    background: url('../images/bonus/nine.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .tableBox .flag_brazil {
+    background: url('../images/flag/Brazil.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .tableBox .flag_germany {
+    background: url('../images/flag/Germany.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .tableBox .flag_netherlands {
+    background: url('../images/flag/Netherlands.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .tableBox .flag_franch {
+    background: url('../images/flag/Franch.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .tableBox .flag_england {
+    background: url('../images/flag/England.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .tableBox .flag_argentina {
+    background: url('../images/flag/Argentina.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .tableBox .flag_italy {
+    background: url('../images/flag/Italy.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .tableBox .flag_sweden {
+    background: url('../images/flag/Sweden.png') no-repeat center;
+    background-size: contain;
+}
