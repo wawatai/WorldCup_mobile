@@ -74,7 +74,7 @@ $mainArea_Color: #ffffff;
     border-radius: 3px;
     border: none;
     color: #161616;
-    font-size: 4.5vw;
+    font-size: 4vw;
     font-weight: bold;
 
     &:active,&.active {
@@ -82,3 +82,6 @@ $mainArea_Color: #ffffff;
         color: #ffffff;
     }
 }
+
+//jumpWindow
+$filter: #00000080;
