@@ -396,8 +396,7 @@ html body header .center p span {
 }
 html body .mainArea {
   width: 100%;
-  height: 100%;
-  padding-top: 42px;
+  height: auto;
 }
 html body .mainArea .gameBox {
   width: 88vw;
