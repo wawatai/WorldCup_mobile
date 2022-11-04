@@ -53,19 +53,19 @@ $mainArea_innerTitle: #e2f4ff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 3px;
+    padding: 0 2px;
     cursor: pointer;
 }
 @mixin rowBox_linear_1 {
     background: linear-gradient(to top,#06b6e8 0%,#1972e0 17%,#06b6e8 100%);
     border-radius: 30px;
-    border: solid 1px #44ccee;
+    border: solid 1px #1876e0;
     color: #ffffff;
 }
 @mixin rowBox_linear_2 {
     background: linear-gradient(to top,#11d416 0%,#0c8b1b 17%,#11d416 100%);
     border-radius: 30px;
-    border: solid 1px #1deb27;
+    border: solid 1px #0C8B1B;
     color: #ffffff;
 }
 $mainArea_Color: #ffffff;

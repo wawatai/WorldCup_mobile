@@ -401,7 +401,7 @@ html body .mainArea {
   padding: 42px 0 90px;
 }
 html body .mainArea .gameBox {
-  width: 92vw;
+  width: 88vw;
   height: auto;
   background: rgba(8, 35, 132, 0.7450980392);
   border: solid 1px #58bff4;
@@ -527,7 +527,7 @@ html body .mainArea .gameBox .bettingBox .smallTitle ul li {
 }
 html body .mainArea .gameBox .bettingBox .smallTitle ul li .rowBox {
   width: 88%;
-  height: 84%;
+  height: 88%;
   background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d4d4d4));
   background: linear-gradient(to top, #ffffff 0%, #d4d4d4 100%);
   border-radius: 30px;
@@ -546,26 +546,33 @@ html body .mainArea .gameBox .bettingBox .smallTitle ul li .rowBox {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 3px;
+  padding: 0 2px;
   cursor: pointer;
 }
 html body .mainArea .gameBox .bettingBox .smallTitle ul li .rowBox.left p:nth-of-type(1) {
+  width: 60%;
   background: -webkit-gradient(linear, left bottom, left top, from(#06b6e8), color-stop(17%, #1972e0), to(#06b6e8));
   background: linear-gradient(to top, #06b6e8 0%, #1972e0 17%, #06b6e8 100%);
   border-radius: 30px;
-  border: solid 1px #44ccee;
+  border: solid 1px #1876e0;
   color: #ffffff;
 }
+html body .mainArea .gameBox .bettingBox .smallTitle ul li .rowBox.left p:nth-of-type(2) {
+  width: 40%;
+}
+html body .mainArea .gameBox .bettingBox .smallTitle ul li .rowBox.right p:nth-of-type(1) {
+  width: 50%;
+}
 html body .mainArea .gameBox .bettingBox .smallTitle ul li .rowBox.right p:nth-of-type(2) {
+  width: 50%;
   background: -webkit-gradient(linear, left bottom, left top, from(#11d416), color-stop(17%, #0c8b1b), to(#11d416));
   background: linear-gradient(to top, #11d416 0%, #0c8b1b 17%, #11d416 100%);
   border-radius: 30px;
-  border: solid 1px #1deb27;
+  border: solid 1px #0C8B1B;
   color: #ffffff;
 }
 html body .mainArea .gameBox .bettingBox .smallTitle ul li .rowBox p {
-  width: 50%;
-  height: 82%;
+  height: 86%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1109,6 +1116,9 @@ html body .filter .jumpWindow.betting .check {
 html body .filter .jumpWindow.betting .check:active, html body .filter .jumpWindow.betting .check.active {
   background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(75%, #0826a8));
   background: linear-gradient(to top, #1251df 0%, #0826a8 75%);
+}
+html body .filter .jumpWindow.acting {
+  height: 50vh;
 }
 html body .bg {
   width: 100%;

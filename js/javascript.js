@@ -20,6 +20,12 @@ $(function(){
                 .addClass("display")
                 .siblings().removeClass("display");
             }
+            else if(n == 2)
+            {
+                $(".filter,.jumpWindow.acting")
+                .addClass("display")
+                .siblings().removeClass("display");
+            }
         })
     
         $(".gameBox .tableBox button").on("click",function(){
