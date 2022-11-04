@@ -10,13 +10,13 @@ $(function(){
     
             if(n == 0)
             {
-                $(".filter,.jumpWindow.record")
+                $(".filter,.jumpWindow.rule")
                 .addClass("display")
                 .siblings().removeClass("display");
             }
             else if(n == 1)
             {
-                $(".filter,.jumpWindow.rule")
+                $(".filter,.jumpWindow.record")
                 .addClass("display")
                 .siblings().removeClass("display");
             }
