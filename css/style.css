@@ -397,6 +397,7 @@ html body header .center p span {
 html body .mainArea {
   width: 100%;
   height: auto;
+  padding-bottom: 90px;
 }
 html body .mainArea .gameBox {
   width: 88vw;
@@ -1121,8 +1122,7 @@ html body .filter .jumpWindow.acting {
 html body main {
   width: 100%;
   height: 100%;
-  padding: 42px 0 90px;
-  overflow-y: auto;
+  padding-top: 42px;
 }
 html body .bg {
   width: 100%;
