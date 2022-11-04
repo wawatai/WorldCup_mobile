@@ -14,6 +14,13 @@ html {
         @import "./footer";
         @import "./jumpWindow";
 
+        main {
+            width: 100%;
+            height: 100%;
+            padding: 42px 0 90px;
+            overflow-y: auto;
+        }
+
         .bg {
             width: 100%;
             height: 100%;
