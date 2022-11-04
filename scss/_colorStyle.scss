@@ -85,3 +85,88 @@ $mainArea_Color: #ffffff;
 
 //jumpWindow
 $filter: #00000080;
+$jumpWindow_BG: linear-gradient(to top,#bf8935 5%,#eab95a 49%,#eab95a 87%,#f9d87f 100%);
+$jumpWindow_Border: #fff8c1;
+$jumpWindow_TitleColor: #161616;
+$jumpWindow_CloseBG: linear-gradient(to top,#c31f17 0%,#971c1c 47%,#c31f17 100%);
+@mixin topList {
+    background: linear-gradient(to top,#f7e9d6 0%,#ffffff 100%);
+    border-radius: 5px 5px 0 0;
+    border: solid 1px #ffffff;
+    border-bottom: none;
+    color: #161616;
+    font-size: 4.5vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:active,&.active {
+        background: linear-gradient(to top,#102e90 0%,#1d46a4 100%);
+        border-color: #123192;
+        color: #ffffff;
+    }
+}
+$jumpWindow_topList_Border: #112f90;
+$jumpWindow_Table_BG: #ffffff;
+$jumpWindow_Table_Border: #fff8c1;
+$jumpWindow_Table_TitleBG: linear-gradient(to top,#9a6221 0%,#6e4111 49%,#9a6221 100%);
+$jumpWindow_Table_TitleColor: #ffffff;
+$jumpWindow_Table_innerBorder: #b39c77;
+$jumpWindow_Table_Color: #252525;
+@mixin pageBox {
+    background: transparent;
+    border: solid 1px #ffffff;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 3vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:active,&.active {
+        background: #1d46a4;
+        border-color: #1d46a4;
+    }
+}
+@mixin checkBtn {
+    background: linear-gradient(to top,#1251df 0%,#0826a8 50%,#1251df 100%);
+    border-radius: 5px;
+    border: solid 1px #f4e1a3;
+    box-shadow: 0 5px 8px 0 #00000049;
+    color: #ffffff;
+    font-size: 5vw;
+    font-weight: bold;
+
+    &:active,&.active {
+        background: linear-gradient(to top,#1251df 0%,#0826a8 75%);
+    }
+}
+@mixin betBtn {
+    background: linear-gradient(to top,#dec8a6 0%,#fffcf8 68%);
+    border-radius: 3px;
+    border: solid 1px #a06d15;
+    color: #252525;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:active,&.active {
+        background: #970e08;
+        border-color: #970e08;
+        color: #ffffff;
+    }
+}
+
+//input
+@mixin inputStyle_1 {
+    background: #ebebeb;
+    border-radius: 5px;
+    border: solid 1px #6b6b6b;
+    color: #eb0d0d;
+    font-size: 4.5vw;
+    font-weight: bold;
+    text-align: center;
+}

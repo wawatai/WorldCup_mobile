@@ -153,35 +153,45 @@ footer i {
     background: url('../images/bonus/nine.png') no-repeat center;
     background-size: contain;
 }
-.mainArea .tableBox .flag_brazil {
+
+.jumpWindow .close::before {
+    background: url('../images/jumpWindow_close.png') no-repeat center;
+    background-size: contain;
+}
+.jumpWindow .pageBox i {
+    background: url('../images/pageBox_arrow.png') no-repeat center;
+    background-size: contain;
+}
+
+.flag_brazil {
     background: url('../images/flag/Brazil.png') no-repeat center;
     background-size: contain;
 }
-.mainArea .tableBox .flag_germany {
+.flag_germany {
     background: url('../images/flag/Germany.png') no-repeat center;
     background-size: contain;
 }
-.mainArea .tableBox .flag_netherlands {
+.flag_netherlands {
     background: url('../images/flag/Netherlands.png') no-repeat center;
     background-size: contain;
 }
-.mainArea .tableBox .flag_franch {
+.flag_franch {
     background: url('../images/flag/Franch.png') no-repeat center;
     background-size: contain;
 }
-.mainArea .tableBox .flag_england {
+.flag_england {
     background: url('../images/flag/England.png') no-repeat center;
     background-size: contain;
 }
-.mainArea .tableBox .flag_argentina {
+.flag_argentina {
     background: url('../images/flag/Argentina.png') no-repeat center;
     background-size: contain;
 }
-.mainArea .tableBox .flag_italy {
+.flag_italy {
     background: url('../images/flag/italy.png') no-repeat center;
     background-size: contain;
 }
-.mainArea .tableBox .flag_sweden {
+.flag_sweden {
     background: url('../images/flag/Sweden.png') no-repeat center;
     background-size: contain;
 }
