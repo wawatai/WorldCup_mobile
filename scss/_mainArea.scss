@@ -154,9 +154,16 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            position: relative;
 
                             &:nth-of-type(1) {
                                 justify-content: flex-start;
+                                
+                                p {
+                                    width: 16vw;
+                                    position: absolute;
+                                    left: 13vw;
+                                }
                             }
                             &:last-child {
                                 justify-content: flex-end;
@@ -173,6 +180,17 @@
                                 color: $mainArea_Color;
                                 font-size: 4vw;
                                 font-weight: bold;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+
+                                &.active {
+                                    width: auto;
+                                    background: $mainArea_overflow_BG;
+                                    border-radius: 3px;
+                                    color: $mainArea_overflow_Color;
+                                    padding: 5px;
+                                }
 
                                 &.money {
                                     font-size: 5vw;

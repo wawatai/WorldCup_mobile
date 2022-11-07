@@ -63,3 +63,10 @@ $(function(){
         }
     })
 })
+
+$(function(){
+    $($(".mainArea .tableBox i").next()).on("click",function(){
+        $(this)
+        .toggleClass("active");
+    })
+})

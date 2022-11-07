@@ -212,12 +212,38 @@
                     color: $jumpWindow_Table_Color;
                     font-size: 4vw;
                     font-weight: bold;
-                    line-height: 5.5vw;
-                    margin-bottom: 5vw;
+                    line-height: 7vw;
 
-                    &:last-child {
-                        margin: 0;
+                    &.mar {
+                        margin-bottom: 5vw;
                     }
+
+                    &.mainTeam {
+                        color: $jumpWindow_rule_mainTeamColor;
+                    }
+                    &.cusTeam {
+                        color: $jumpWindow_rule_cusTeamColor;
+                    }
+                    
+                    span {
+                        display: inline-block;
+                        color: $jumpWindow_rule_remindColor;
+                        padding: 3px 10px;
+
+                        &.mainWin {
+                            background: $jumpWindow_rule_mainWinBG;
+                        }
+                        &.cusWin {
+                            background: $jumpWindow_rule_cusWinBG;
+                        }
+                    }
+                }
+
+                .img {
+                    width: 100%;
+                    height: 0;
+                    padding-top: 141%;
+                    margin: 10px 0;
                 }
             }
 
