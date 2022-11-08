@@ -117,6 +117,10 @@ $jumpWindow_Table_TitleBG: linear-gradient(to top,#9a6221 0%,#6e4111 49%,#9a6221
 $jumpWindow_Table_TitleColor: #ffffff;
 $jumpWindow_Table_innerBorder: #b39c77;
 $jumpWindow_Table_Color: #252525;
+$jumpWindow_Table_firstColor: #c68b18;
+$jumpWindow_Table_totalBG: #1d3c83;
+$jumpWindow_Table_totalColor: #ffffff;
+$jumpWindow_Table_totalBorder: #ffffff;
 @mixin pageBox {
     background: transparent;
     border: solid 1px #ffffff;
@@ -152,12 +156,12 @@ $jumpWindow_Table_Color: #252525;
     border-radius: 3px;
     border: solid 1px #a06d15;
     color: #252525;
-    font-size: 18px;
+    font-size: 4vw;
     font-weight: bold;
 
     &:active,&.active {
         background: #970e08;
-        border-color: #970e08;
+        border-color: #ffffff;
         color: #ffffff;
     }
 }
@@ -166,8 +170,17 @@ $jumpWindow_rule_mainTeamColor: #ec0a10;
 $jumpWindow_rule_cusTeamColor: #048e0c;
 $jumpWindow_rule_mainWinBG: #d1050a;
 $jumpWindow_rule_cusWinBG: #108308;
+$jumpWindow_acting_winColor: #019e0f;
+$jumpWindow_acting_loseColor: #e71111;
+$jumpWindow_acting_allWinColor: #20ff34;
+$jumpWindow_acting_allLoseColor: #ff5842;
+$jumpWindow_actingDetail_codeColor: #888888;
+$jumpWindow_actingDetail_vsColor: #b0852c;
+$jumpWindow_actingDetail_betColor: #ff5b0b;
+$jumpWindow_actingDetail_mainTeamColor: #0926ff;
 
 //input
+
 @mixin inputStyle_1 {
     background: #ebebeb;
     border-radius: 5px;
@@ -176,4 +189,27 @@ $jumpWindow_rule_cusWinBG: #108308;
     font-size: 4.5vw;
     font-weight: bold;
     text-align: center;
+}
+@mixin inputStyle_2 {
+    background: #ffffff;
+    border-radius: 5px;
+    border: solid 1px #9b6d22;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+}
+$inputStyle_2_Color: #161616;
+$inputStyle_2_midColor: #878787;
+
+//select
+
+@mixin selectStyle_1 {
+    background: #ffffff;
+    border-radius: 5px;
+    border: solid 1px #9b6d22;
+    color: #161616;
+    font-size: 4vw;
+    font-weight: bold;
+    padding-left: 10px;
 }

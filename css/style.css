@@ -302,6 +302,16 @@ footer i {
   background-size: contain;
 }
 
+.selectBox .arrow_ic {
+  background: url("../images/arrow_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.inputBox .date_ic {
+  background: url("../images/date.png") no-repeat center;
+  background-size: contain;
+}
+
 .flag_America {
   background: url("../images/flag/America.png") no-repeat center;
   background-size: 100%;
@@ -893,6 +903,8 @@ html body .filter .jumpWindow {
   position: relative;
   overflow: hidden;
   display: none;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
 }
 html body .filter .jumpWindow.display {
   display: block;
@@ -1248,12 +1260,12 @@ html body .filter .jumpWindow.betting .content .bettingBox .btnBox button {
   border-radius: 3px;
   border: solid 1px #a06d15;
   color: #252525;
-  font-size: 18px;
+  font-size: 4vw;
   font-weight: bold;
 }
 html body .filter .jumpWindow.betting .content .bettingBox .btnBox button:active, html body .filter .jumpWindow.betting .content .bettingBox .btnBox button.active {
   background: #970e08;
-  border-color: #970e08;
+  border-color: #ffffff;
   color: #ffffff;
 }
 html body .filter .jumpWindow.betting .content .bettingBox .btnBox button:last-child {
@@ -1280,8 +1292,270 @@ html body .filter .jumpWindow.betting .check:active, html body .filter .jumpWind
   background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(75%, #0826a8));
   background: linear-gradient(to top, #1251df 0%, #0826a8 75%);
 }
-html body .filter .jumpWindow.acting {
-  height: 50vh;
+html body .filter .jumpWindow.acting .topBox {
+  width: 92%;
+  height: auto;
+  border-bottom: solid 3px #112f90;
+  margin: 3vw auto;
+  padding-bottom: 3vw;
+}
+html body .filter .jumpWindow.acting .topBox .row {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .jumpWindow.acting .topBox .row .smallTitle {
+  width: 20vw;
+  color: #161616;
+  font-size: 4vw;
+  font-weight: bold;
+  margin-bottom: 2vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .filter .jumpWindow.acting .topBox .row .selectBox {
+  display: block;
+  width: 100%;
+  height: 10vw;
+  position: relative;
+  margin-bottom: 2vw;
+}
+html body .filter .jumpWindow.acting .topBox .row .selectBox select {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 5px;
+  border: solid 1px #9b6d22;
+  color: #161616;
+  font-size: 4vw;
+  font-weight: bold;
+  padding-left: 10px;
+}
+html body .filter .jumpWindow.acting .topBox .row .selectBox i {
+  width: 4vw;
+  height: 4vw;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .filter .jumpWindow.acting .topBox .row .inputBox {
+  width: 100%;
+  height: 10vw;
+  background: #ffffff;
+  border-radius: 5px;
+  border: solid 1px #9b6d22;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 3vw;
+}
+html body .filter .jumpWindow.acting .topBox .row .inputBox input {
+  background: none;
+  border: none;
+  color: #161616;
+  font-size: 3.4vw;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.acting .topBox .row .inputBox p {
+  color: #878787;
+  font-size: 3.7vw;
+  font-weight: bold;
+  margin-right: 4vw;
+}
+html body .filter .jumpWindow.acting .topBox .row .inputBox i {
+  width: 4vw;
+  height: 4vw;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .filter .jumpWindow.acting .topBox .btnBox {
+  width: 92%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1vw 1fr 1vw 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vw;
+  margin: 0 auto 2vw;
+}
+html body .filter .jumpWindow.acting .topBox .btnBox button {
+  width: auto;
+  height: 8vw;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dec8a6), color-stop(68%, #fffcf8));
+  background: linear-gradient(to top, #dec8a6 0%, #fffcf8 68%);
+  border-radius: 3px;
+  border: solid 1px #a06d15;
+  color: #252525;
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.acting .topBox .btnBox button:active, html body .filter .jumpWindow.acting .topBox .btnBox button.active {
+  background: #970e08;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.acting .topBox .check {
+  width: 75%;
+  height: 11vw;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(50%, #0826a8), to(#1251df));
+  background: linear-gradient(to top, #1251df 0%, #0826a8 50%, #1251df 100%);
+  border-radius: 5px;
+  border: solid 1px #f4e1a3;
+  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+  color: #ffffff;
+  font-size: 5vw;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+html body .filter .jumpWindow.acting .topBox .check:active, html body .filter .jumpWindow.acting .topBox .check.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(75%, #0826a8));
+  background: linear-gradient(to top, #1251df 0%, #0826a8 75%);
+}
+html body .filter .jumpWindow.acting .content {
+  width: 92%;
+  height: auto;
+  background: #ffffff;
+  border: solid 1px #fff8c1;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+html body .filter .jumpWindow.acting .content table {
+  width: auto;
+  height: auto;
+}
+html body .filter .jumpWindow.acting .content table tr:last-child td {
+  background: #1d3c83;
+  border: none;
+}
+html body .filter .jumpWindow.acting .content table tr:last-child td p {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.acting .content table tr th {
+  width: auto;
+  height: 10vw;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a6221), color-stop(49%, #6e4111), to(#9a6221));
+  background: linear-gradient(to top, #9a6221 0%, #6e4111 49%, #9a6221 100%);
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.acting .content table tr th:last-child p {
+  border: none;
+}
+html body .filter .jumpWindow.acting .content table tr th p {
+  width: 100%;
+  border-right: solid 1px #fff8c1;
+  color: #ffffff;
+  font-size: 3.7vw;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow.acting .content table tr td {
+  width: auto;
+  min-width: 24vw;
+  height: 10vw;
+  border-bottom: solid 1px #b39c77;
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.acting .content table tr td p {
+  width: 100%;
+  border-right: solid 1px #b39c77;
+  color: #252525;
+  font-size: 3.7vw;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0 5vw;
+}
+html body .filter .jumpWindow.acting .content table tr td p.win {
+  color: #019e0f;
+}
+html body .filter .jumpWindow.acting .content table tr td p.lose {
+  color: #e71111;
+}
+html body .filter .jumpWindow.acting .content table tr td p.allWin {
+  color: #20ff34;
+}
+html body .filter .jumpWindow.acting .content table tr td p.allLose {
+  color: #ff5842;
+}
+html body .filter .jumpWindow.acting .content table tr td p span {
+  color: #c68b18;
+}
+html body .filter .jumpWindow.acting .pageBox {
+  width: 88%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 5vw auto;
+}
+html body .filter .jumpWindow.acting .pageBox i {
+  width: 3vw;
+  height: 3vw;
+}
+html body .filter .jumpWindow.acting .pageBox i.arrow_right {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+html body .filter .jumpWindow.acting .pageBox ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 2vw;
+}
+html body .filter .jumpWindow.acting .pageBox ul li {
+  width: 6vw;
+  height: 6vw;
+  background: transparent;
+  border: solid 1px #ffffff;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 3vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  margin-right: 2vw;
+}
+html body .filter .jumpWindow.acting .pageBox ul li:active, html body .filter .jumpWindow.acting .pageBox ul li.active {
+  background: #1d46a4;
+  border-color: #1d46a4;
+}
+html body .filter .jumpWindow.acting .pageBox ul li:last-child {
+  margin: 0;
 }
 html body main {
   width: 100%;
