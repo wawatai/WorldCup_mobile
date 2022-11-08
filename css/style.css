@@ -903,8 +903,6 @@ html body .filter .jumpWindow {
   position: relative;
   overflow: hidden;
   display: none;
-  -ms-scroll-chaining: none;
-      overscroll-behavior: none;
 }
 html body .filter .jumpWindow.display {
   display: block;
