@@ -700,6 +700,20 @@
                                 &.allLose {
                                     color: $jumpWindow_acting_allLoseColor;
                                 }
+
+                                span {
+                                    color: $jumpWindow_actingDetail_betColor;
+
+                                    &.code {
+                                        color: $jumpWindow_actingDetail_codeColor;
+                                    }
+                                    &.vs {
+                                        color: $jumpWindow_actingDetail_vsColor;
+                                    }
+                                    &.mainTeam {
+                                        color: $jumpWindow_actingDetail_mainTeamColor;
+                                    }
+                                }
                             }
                         }
                     }

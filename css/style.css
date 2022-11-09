@@ -1647,6 +1647,18 @@ html body .filter .jumpWindow.actingDetail .content table tr td p.allWin {
 html body .filter .jumpWindow.actingDetail .content table tr td p.allLose {
   color: #ff5842;
 }
+html body .filter .jumpWindow.actingDetail .content table tr td p span {
+  color: #ff5b0b;
+}
+html body .filter .jumpWindow.actingDetail .content table tr td p span.code {
+  color: #888888;
+}
+html body .filter .jumpWindow.actingDetail .content table tr td p span.vs {
+  color: #b0852c;
+}
+html body .filter .jumpWindow.actingDetail .content table tr td p span.mainTeam {
+  color: #0926ff;
+}
 html body .filter .jumpWindow.actingDetail .pageBox {
   width: 88%;
   height: auto;
