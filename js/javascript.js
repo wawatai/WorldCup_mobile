@@ -33,6 +33,12 @@ $(function(){
             .addClass("display")
             .siblings().removeClass("display");
         })
+
+        $(".jumpWindow.acting .clickable").on("click",function(){
+            $(".filter,.jumpWindow.actingDetail")
+            .addClass("display")
+            .siblings().removeClass("display");
+        })
     })
 })
 
