@@ -1129,7 +1129,7 @@ html body .filter .jumpWindow.rule .content p.cusTeam {
 html body .filter .jumpWindow.rule .content p span {
   display: inline-block;
   color: #ffffff;
-  padding: 3px 10px;
+  padding: 0 10px;
 }
 html body .filter .jumpWindow.rule .content p span.mainWin {
   background: #d1050a;
@@ -1153,7 +1153,7 @@ html body .filter .jumpWindow.rule .check {
   -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
           box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
   color: #ffffff;
-  font-size: 5vw;
+  font-size: 4.5vw;
   font-weight: bold;
   display: block;
   margin: 0 auto 5vw;
@@ -1282,7 +1282,7 @@ html body .filter .jumpWindow.betting .check {
   -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
           box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
   color: #ffffff;
-  font-size: 5vw;
+  font-size: 4.5vw;
   font-weight: bold;
   display: block;
   margin: 5vw auto;
@@ -1418,7 +1418,7 @@ html body .filter .jumpWindow.acting .topBox .check {
   -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
           box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
   color: #ffffff;
-  font-size: 5vw;
+  font-size: 4.5vw;
   font-weight: bold;
   display: block;
   margin: 0 auto;
